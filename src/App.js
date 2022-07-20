@@ -3,7 +3,8 @@ import Header from './components/Header';
 import logo from './assets/logo.svg';
 import './App.css';
 import Profile from './pages/Profile';
-import Projects from './pages/Projects'
+import Projects from './pages/Projects';
+import SingleProject from './pages/SingleProject'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Profile userName="Skullomanic84" />} />
         <Route path='/projects' element={<Projects userName="Skullomanic84" />} />
+        <Route path='/projects/:name' element={<SingleProject userName="Skullomanic84" />} />
       </Routes>
       </BrowserRouter>
     </div>

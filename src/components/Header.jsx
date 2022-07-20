@@ -16,7 +16,7 @@ function Header({ logo }) {
           <RouterLink to='/' className='App-link'>
             About Me
           </RouterLink>
-          <RouterLink to='/' className='App-link'>
+          <RouterLink to='/projects' className='App-link'>
             Projects
           </RouterLink>
         </nav>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import List from '../components/List';
-import Link from '../components/Link';
+
 
 function Projects({ userName }) {
 
@@ -31,13 +32,17 @@ function Projects({ userName }) {
         {loading ? (
             <span>Loading....</span>
         ) : (
-            <div>
+            <div className='card'>
                 <List items={projects.map((project) =>(
                     {
                         field: project.name,
-                        value: <Link  url={project.html_url}
-                        title={project.html_url}
-                        />,
+                        value: (
+                            <RouterLink to={`/projects/${project.name}`}>
+
+                            Open Project
+
+                            </RouterLink>
+                        ),
                     }
                 ))}/>
             </div>
