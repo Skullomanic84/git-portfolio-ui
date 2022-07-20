@@ -20,13 +20,16 @@
     font-size: calc(10px + 2vmin);
     color: white;
     }
-    .App-link {
-    color: #61dafb;
+
+    .App-header > nav {
+        margin-bottom: 20px;
     }
 
-    .App {
-        text-align: center;
-        }
+    .App-header > nav > .App-link {
+        margin-right: 10px;
+        color: #61dafb;
+        font-size: 18px;
+    }
 
 
     @keyframes App-logo-spin {
